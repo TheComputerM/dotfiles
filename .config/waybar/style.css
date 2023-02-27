@@ -1,0 +1,134 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: JetBrainsMono Nerd Font, monospace;
+    font-size: 11px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd,
+#bluetooth {
+    padding: 0 12px;
+    color: #e5e5e5;
+    border-radius: 16px;
+    background-color: #1e1e2e;
+}
+
+#workspaces {
+    border-radius: 16px;
+    padding: 0 6px;
+    background-color: #1e1e2e;
+}
+
+#workspaces button {
+    color: #585b70;
+    padding: 0 2px;
+    background-color: transparent;
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+}
+
+#workspaces button.active {
+    color: #b4befe;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#cpu {
+    color: #fb958b;
+}
+
+#memory {
+    color: #89b4fa;
+}
+
+#backlight {
+    color: #f5e0dc;
+}
+
+#battery {
+    color: #f2cdcd;
+}
+
+#battery.charging,
+#battery.full,
+#battery.plugged {
+    color: #a6e3a1;
+}
+
+@keyframes blink {
+    to {
+        background-color: rgba(30, 34, 42, 0.5);
+        color: #abb2bf;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: #f38ba8;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#pulseaudio {
+    color: #94e2d5;
+}
+
+#clock {
+    color: #bac2de;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#bluetooth {
+    color: #707d9d;
+}
+
+#bluetooth.disconnected {
+    color: #f38ba8;
+}
+
+#network {
+    color: #b48ead;
+}
+
+#network.disconnected {
+    color: #f38ba8;
+}
+
+#temperature {
+    color: #eed49f;
+}
+
+#temperature.critical {
+    background-color: #f38ba8;
+}

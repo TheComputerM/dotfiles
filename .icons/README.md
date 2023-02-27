@@ -1,0 +1,4 @@
+- Get the [Catppuccin-Mocha](https://www.pling.com/p/1715570) icon pack.
+- Extract the zip and copy the contents to this folder.
+- Apply the gsettings using the script `.config/hypr/scripts/import-gsettings.sh`.
+- If you choose to install a different icon pack you just need to change `.config/gtk-3.0/settings.ini`.

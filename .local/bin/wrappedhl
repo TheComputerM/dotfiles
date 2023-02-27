@@ -1,0 +1,27 @@
+
+#!/usr/bin/env bash
+# wrappedhl
+# Launch Hyprland with a simple wrapper
+#
+cd ~/
+
+# Variables
+export _JAVA_AWT_WM_NONREPARENTING=1
+export XCURSOR_SIZE=24
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export SDL_IM_MODULE=fcitx
+export GLFW_IM_MODULE=ibus
+
+# qt applications
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_QPA_PLATFORM="wayland"
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+# Execute Hyprland
+if [ -f /usr/local/bin/Hyprland ]; then
+   exec /usr/local/bin/Hyprland >/dev/null 2>&1 
+elif [ -f /usr/bin/Hyprland ]; then
+   exec /usr/bin/Hyprland >/dev/null 2>&1 
+fi
