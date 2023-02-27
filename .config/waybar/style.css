@@ -64,7 +64,7 @@ window#waybar.hidden {
 }
 
 #memory {
-    color: #89b4fa;
+    color: #eed49f;
 }
 
 #backlight {
@@ -101,22 +101,6 @@ window#waybar.hidden {
     color: #94e2d5;
 }
 
-#clock {
-    color: #bac2de;
-}
-
-label:focus {
-    background-color: #000000;
-}
-
-#bluetooth {
-    color: #707d9d;
-}
-
-#bluetooth.disconnected {
-    color: #f38ba8;
-}
-
 #network {
     color: #b48ead;
 }
@@ -125,10 +109,14 @@ label:focus {
     color: #f38ba8;
 }
 
-#temperature {
-    color: #eed49f;
+#clock {
+    color: #bac2de;
 }
 
-#temperature.critical {
-    background-color: #f38ba8;
+#bluetooth {
+    color: #707d9d;
+}
+
+#bluetooth.disconnected {
+    color: #f38ba8;
 }

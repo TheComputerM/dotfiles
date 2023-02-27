@@ -7,7 +7,6 @@
     "modules-left": [
         "cpu",
         "memory",
-        "temperature",
         "backlight",
         "battery"
     ],
@@ -32,6 +31,7 @@
             "7": "七",
             "8": "八",
             "9": "九",
+            "10": "十",
             "urgent": "",
             "default": ""
         }

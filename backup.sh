@@ -11,5 +11,7 @@ cp -r ~/.config/wofi .config
 cp -r ~/.config/waybar .config
 cp -r ~/.config/wezterm .config
 cp -r ~/.config/Thunar .config
+cp -r ~/.config/swaylock .config
+cp -r ~/.config/wlogout .config
 cp ~/.config/code-flags.conf .config
 cp ~/.config/microsoft-edge-stable-flags.conf .config
