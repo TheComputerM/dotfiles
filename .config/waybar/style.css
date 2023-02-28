@@ -40,7 +40,7 @@ tooltip label {
 #mpd,
 #bluetooth {
     padding: 0 10px;
-    color: #e5e5e5;
+    color: #cdd6f4;
     border-radius: 16px;
     background-color: #1e1e2e;
 }
@@ -72,10 +72,6 @@ tooltip label {
 }
 
 #memory {
-    color: #eed49f;
-}
-
-#backlight {
     color: #f5e0dc;
 }
 
@@ -84,7 +80,7 @@ tooltip label {
 }
 
 #battery.warning {
-    color: #f9e2af;
+    color: #eed49f;
 }
 
 #battery.charging,
@@ -110,7 +106,7 @@ tooltip label {
 }
 
 #pulseaudio {
-    color: #778beb;
+    color: #8eb0b4;
 }
 
 #network {

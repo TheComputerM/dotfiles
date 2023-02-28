@@ -94,7 +94,7 @@
         },
         "max-length": 20,
         "format": "{icon} {capacity}%",
-        "format-warning": "{icon} {capacity}%",
+        "format-warning": " {capacity}%",
         "format-critical": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": "  {capacity}%",
@@ -112,7 +112,7 @@
         "format-wifi": "直 {signalStrength}%",
         "format-ethernet": " wired",
         "format-disconnected": "睊",
-        "tooltip-format": "SSDID: {essid}\nIP: {ipaddr}"
+        "tooltip-format": "SSID: {essid}\nIP: {ipaddr}"
     },
     "clock": {
         "format": "<span color='#eba0ac'> </span>{:%I:%M %p}",
