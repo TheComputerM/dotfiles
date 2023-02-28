@@ -37,6 +37,7 @@ _still in progress_
 - Copy the dots i89dcebnto their respective folders
 - Replace with your username in `.config/gtk-3.0/bookmarks`
 - Maybe reboot
+- If you cannot see available wifi networks try `systemctl start iwd`
 
 ## Keybindings
 
