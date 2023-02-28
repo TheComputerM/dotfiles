@@ -31,6 +31,7 @@ _still in progress_
     - `wlogout` for logout menu
     - `wl-clipboard` for clipboard management
     - `brightnessctl` to control backlight brightness
+    - `sddm-git` for autologin
 
 ## Installation
 
