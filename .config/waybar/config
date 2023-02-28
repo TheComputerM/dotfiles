@@ -89,14 +89,14 @@
     "battery": {
         "interval": 60,
         "states": {
-            "warning": 30,
+            "warning": 25,
             "critical": 15
         },
         "max-length": 20,
         "format": "{icon} {capacity}%",
         "format-warning": "{icon} {capacity}%",
         "format-critical": "{icon} {capacity}%",
-        "format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",
+        "format-charging": " {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{icon} {time}",
         "format-full": "  {capacity}%",
@@ -112,11 +112,11 @@
         "format-wifi": "直 {signalStrength}%",
         "format-ethernet": " wired",
         "format-disconnected": "睊",
-        "tooltip-format": "{ipaddr}"
+        "tooltip-format": "SSDID: {essid}\nIP: {ipaddr}"
     },
     "clock": {
-        "format": "<span color='#bf616a'> </span>{:%I:%M %p}",
-        "format-alt": "<span color='#bf616a'> </span>{:%a %b %d}",
-        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+        "format": "<span color='#eba0ac'> </span>{:%I:%M %p}",
+        "format-alt": "<span color='#eba0ac'> </span>{:%a %b %d}",
+        "tooltip-format": "{calendar}"
     }
 }

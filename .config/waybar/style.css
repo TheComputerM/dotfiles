@@ -9,11 +9,19 @@
 
 window#waybar {
     background-color: transparent;
-    color: #ffffff;
 }
 
 window#waybar.hidden {
     opacity: 0.2;
+}
+
+tooltip {
+    background-color: #313244;
+    border: 1px solid #6c7086;
+}
+
+tooltip label {
+    color: #a6adc8;
 }
 
 #clock,
@@ -31,7 +39,7 @@ window#waybar.hidden {
 #idle_inhibitor,
 #mpd,
 #bluetooth {
-    padding: 0 12px;
+    padding: 0 10px;
     color: #e5e5e5;
     border-radius: 16px;
     background-color: #1e1e2e;
@@ -39,7 +47,7 @@ window#waybar.hidden {
 
 #workspaces {
     border-radius: 16px;
-    padding: 0 6px;
+    padding: 0 4px;
     background-color: #1e1e2e;
 }
 
@@ -72,7 +80,11 @@ window#waybar.hidden {
 }
 
 #battery {
-    color: #f2cdcd;
+    color: #f5c2e7;
+}
+
+#battery.warning {
+    color: #f9e2af;
 }
 
 #battery.charging,
@@ -98,7 +110,7 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-    color: #94e2d5;
+    color: #778beb;
 }
 
 #network {
