@@ -35,11 +35,22 @@ _still in progress_
 
 ## Installation
 
-- Copy the dots i89dcebnto their respective folders
-- Replace with your username in `.config/gtk-3.0/bookmarks`
-- Maybe reboot
+- Copy the dots into their respective folders
+- Follow the instructions in the READMEs of __.themes__ and __.icons__
+- Put your username in `.config/gtk-3.0/bookmarks`
 - If you cannot see available wifi networks try `systemctl start iwd`
-- Follow the auto-login [here](https://wiki.archlinux.org/title/GNOME/Keyring) or else vscode is going to keep asking you to login and shit
+- Follow the gnome-keyring [here](https://wiki.archlinux.org/title/GNOME/Keyring) or else vscode is going to keep asking you to login and shit
+- Maybe reboot
+
+### Tips
+
+You can automatically run Hyprland when you login through tty, add this to the end of your ~/.bash_profile
+
+```sh
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec ~/.local/bin/wrappedhl
+fi
+```
 
 ## Keybindings
 
