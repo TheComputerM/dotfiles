@@ -31,7 +31,7 @@ _still in progress_
     - `wlogout` for logout menu
     - `wl-clipboard` for clipboard management
     - `brightnessctl` to control backlight brightness
-    - `sddm-git` for autologin
+    - `gnome-keyring` for shit I don't understand
 
 ## Installation
 
@@ -39,6 +39,7 @@ _still in progress_
 - Replace with your username in `.config/gtk-3.0/bookmarks`
 - Maybe reboot
 - If you cannot see available wifi networks try `systemctl start iwd`
+- Follow the auto-login [here](https://wiki.archlinux.org/title/GNOME/Keyring) or else vscode is going to keep asking you to login and shit
 
 ## Keybindings
 
