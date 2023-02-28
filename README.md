@@ -40,6 +40,10 @@ _still in progress_
 - Put your username in `.config/gtk-3.0/bookmarks`
 - If you cannot see available wifi networks try `systemctl start iwd`
 - Follow the gnome-keyring [here](https://wiki.archlinux.org/title/GNOME/Keyring) or else vscode is going to keep asking you to login and shit
+- Sometimes vscode sets itself as the default folder handler, set it to thunar
+```sh
+xdg-mime query default inode/mount-point
+```
 - Maybe reboot
 
 ### Tips
