@@ -6,3 +6,4 @@ killall xdg-desktop-portal
 /usr/libexec/xdg-desktop-portal-hyprland &
 sleep 3
 /usr/lib/xdg-desktop-portal &
+
