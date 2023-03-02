@@ -32,6 +32,7 @@ _still in progress_
     - `wl-clipboard` for clipboard management
     - `brightnessctl` to control backlight brightness
     - `gnome-keyring` for shit I don't understand
+    - `sway-nc` for notifications
 
 ## Installation
 
