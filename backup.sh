@@ -15,3 +15,4 @@ cp -r ~/.config/swaylock .config
 cp -r ~/.config/wlogout .config
 cp ~/.config/code-flags.conf .config
 cp ~/.config/microsoft-edge-stable-flags.conf .config
+cp ~/.config/mimeapps.list .config
