@@ -33,6 +33,7 @@ _still in progress_
     - `brightnessctl` to control backlight brightness
     - `gnome-keyring` for shit I don't understand
     - `sway-nc` for notifications
+    - `grim`, `slurp` and `jq` for screenshots
 
 ## Installation
 
@@ -43,7 +44,7 @@ _still in progress_
 - Follow the gnome-keyring [here](https://wiki.archlinux.org/title/GNOME/Keyring) or else vscode is going to keep asking you to login and shit
 - Sometimes vscode sets itself as the default folder handler, set it to thunar
 ```sh
-xdg-mime query default inode/mount-point
+xdg-mime query default inode/folder
 ```
 - Maybe reboot
 
