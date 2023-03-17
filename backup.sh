@@ -1,8 +1,5 @@
 #!/bin/bash
 
-mkdir -p .local/bin
-cp -r ~/.local/bin/wrappedhl .local/bin/
-
 mkdir -p .config
 cp -r ~/.config/hypr .config
 cp -r ~/.config/gtk-2.0 .config
