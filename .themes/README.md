@@ -1,4 +1,5 @@
 - Get the [Catppuccin GTK Theme](https://github.com/catppuccin/gtk).
+- The theme applied by default is *Catppuccin-Mocha-Standard-Mauve-Dark*.
 - Follow the instructions in the README to apply themes.
 - Apply the gsettings using the script `.config/hypr/scripts/import-gsettings.sh`.
 - If you choose to install a different theme you just need to change `.config/gtk-3.0/settings.ini`

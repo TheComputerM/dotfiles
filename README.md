@@ -1,3 +1,4 @@
+# Sexfiles
 
 This setup is tested with an EndeavourOS base install with no desktop.
 
@@ -23,7 +24,7 @@ _still in progress_
     - `waybar-hyprland-git`
 - Misc
     - `polkit-gnome` _important_
-    - `xdg-desktop-portal-hyprland-git` _important_
+    - `xdg-desktop-portal-hyprland` _important_
     - `qt6-wayland` and `qt5-wayland` _important_
     - `ttf-jetbrains-mono-nerd` for nerd font icons
     - `swaybg` to set the background image
@@ -41,7 +42,7 @@ _still in progress_
 - Follow the instructions in the READMEs of __.themes__ and __.icons__
 - Put your username in `.config/gtk-3.0/bookmarks`
 - If you cannot see available wifi networks try `systemctl start iwd`
-- Follow the gnome-keyring [here](https://wiki.archlinux.org/title/GNOME/Keyring) or else vscode is going to keep asking you to login and shit
+- Follow the gnome-keyring [here](https://wiki.archlinux.org/title/GNOME/Keyring) or else vscode is going to keep asking you to login and shit.
 - Sometimes vscode sets itself as the default folder handler, set it to thunar
 ```sh
 xdg-mime query default inode/folder
