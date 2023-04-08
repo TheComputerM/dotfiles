@@ -6,7 +6,7 @@ _still in progress_
 ## Software
 
 - Hyprland window manager
-    - `hyprland-bin`
+    - `hyprland`
 - WezTerm terminal emulator
     - `wezterm`
 - Microsoft Edge (f*** you thats why)
@@ -32,7 +32,7 @@ _still in progress_
     - `wl-clipboard` for clipboard management
     - `brightnessctl` to control backlight brightness
     - `gnome-keyring` for shit I don't understand
-    - `sway-nc` for notifications
+    - `dunst` for notifications
     - `grim`, `slurp` and `jq` for screenshots
 
 ## Installation
@@ -54,7 +54,7 @@ You can automatically run Hyprland when you login through tty, add this to the e
 
 ```sh
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec ~/.local/bin/wrappedhl
+  exec Hyprland
 fi
 ```
 
