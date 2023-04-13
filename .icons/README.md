@@ -1,5 +1,5 @@
 - Get the [Fluent Icons](https://www.pling.com/p/1477945/) icon pack.
 - The icon pack by default is *Fluent-purple*
-- Extract the zip and copy the contents to this folder.
-- Apply the gsettings using the script `.config/hypr/scripts/import-gsettings.sh`.
-- If you choose to install a different icon pack you just need to change `.config/gtk-3.0/settings.ini`.
+- Extract the zip and copy the contents to `~/.icons`.
+- Apply the gsettings using the script `~/.config/hypr/scripts/import-gsettings.sh`.
+- If you choose to install a different icon pack you just need to change `~/.config/gtk-3.0/settings.ini`.
