@@ -1,6 +1,6 @@
 # Dotfiles
 
-This setup is tested with an EndeavourOS base install with no desktop.
+This setup is tested with a vanilla Arch base install with no desktop.
 
 ---
 
@@ -9,16 +9,13 @@ This setup is tested with an EndeavourOS base install with no desktop.
 ![Preview 1](./assets/1.png)
 ![Preview 2](./assets/2.png)
 ![Preview 3](./assets/3.png)
-![Preview 4](./assets/4.png)
 
 ## Software
 
 - Hyprland window manager
     - `hyprland`
-- Alacritty terminal emulator
-    - `alacritty`
-- Microsoft Edge (f*** you thats why)
-    - `microsoft-edge-stable-bin`
+- Wezterm terminal emulator
+    - `wezterm`
 - Thunar file manager
     - `thunar`
     - `thunar-volman`
@@ -41,7 +38,7 @@ This setup is tested with an EndeavourOS base install with no desktop.
     - `brightnessctl` to control backlight brightness
     - `gnome-keyring` for shit I don't understand
     - `dunst` for notifications
-    - `grim`, `slurp` and `jq` for screenshots
+    - `grimblast` for screenshots
 
 ## Recommended Software
 

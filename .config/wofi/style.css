@@ -1,28 +1,28 @@
 window {
     margin: 0px;
-    border: 2px solid #cba6f7;
+    border: 2px solid #C792EA;
     border-radius: 8px;
-    background-color: #181825;
+    background-color: #181818;
 }
 
 #input {
     margin: 5px;
     border: none;
     color: #f8f8f2;
-    background-color: #313244;
+    background-color: #313131;
 }
 
 #inner-box {
     margin: 5px;
     border: none;
-    background-color: #181825;
+    background-color: #181818;
     outline: none;
 }
 
 #outer-box {
     margin: 5px;
     border: none;
-    background-color: #181825;
+    background-color: #181818;
 }
 
 #text {
@@ -32,7 +32,7 @@ window {
 }
 
 #entry:selected {
-    background-color: #45475a;
+    background-color: #454545;
     outline: none;
 }
 

@@ -1,5 +1,5 @@
-- Get the [Catppuccin GTK Theme](https://github.com/catppuccin/gtk).
-- The theme applied by default is *Catppuccin-Mocha-Standard-Mauve-Dark*.
+- Get the [Colloid GTK Theme](https://github.com/vinceliuice/Colloid-gtk-theme).
+- The theme applied by default is Black version.
 - Extract the zip and copy the contents to `~/.themes`.
 - Follow the instructions in the [README](https://github.com/catppuccin/gtk#readme) to apply themes.
 - Apply the gsettings using the script `.config/hypr/scripts/import-gsettings.sh`.

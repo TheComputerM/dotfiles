@@ -1,26 +1,30 @@
 {
-    "height": 24,
     "layer": "top",
-    "margin-top": 3,
-    "margin-bottom": 1,
+    "name": "bar",
     "spacing": 4,
+    "position": "top",
+    "margin-top": 2,
     "modules-left": [
         "cpu",
         "memory",
-        "backlight",
-        "battery"
-    ],
-    "modules-center": [
+        "temperature",
         "wlr/workspaces"
     ],
     "modules-right": [
         "pulseaudio",
+        "backlight",
+        "battery",
         "network",
         "clock"
     ],
     "wlr/workspaces": {
-        "format": "{icon}",
+        "format": "{name}",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
         "on-click": "activate",
+        "sort-by-number": true,
+        "all-outputs": true,
+        "active-only": false,
         "format-icons": {
             "1": "一",
             "2": "二",
@@ -37,41 +41,30 @@
         }
     },
     "cpu": {
-        "interval": 1,
-        "format": " {usage}%",
-        "max-length": 100
+        "format": "<span size='large' color='#DB86BA'></span>  {usage}%"
     },
     "memory": {
-        "interval": 30,
-        "format": " {}%",
-        "format-alt": " {used:0.1f}G",
-        "max-length": 10
+        "format": "<span size='large' color='#7CD38E'></span>  {used}G",
+        "tooltip-format": "{swapAvail}G swap available"
     },
-    "backlight": {
-        "device": "DP-1",
-        "format": "{icon} {percent}%",
+    "temperature": {
+        "format": "<span size='large' color='#F07178'>{icon}</span>  {temperatureC}°C",
         "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "", "", ""
         ],
-        "on-click": ""
+        "tooltip-format": "{temperatureF}F"
+    },
+    "hyprland/window": {
+        "max-length": 25
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "  {volume}%",
-        "format-bluetooth-muted": "婢 ",
-        "format-muted": "婢",
+        "format": "<span size='large' color='#71D58D'>{icon}</span>  {volume}%",
+        "format-muted": "<span size='large' color='#71D58D'>󰝟</span>  muted",
+        "reverse-scrolling": true,
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "headphone": "󰋋",
+            "hands-free": "󰹇",
+            "headset": "󰋎",
             "phone": "",
             "portable": "",
             "car": "",
@@ -80,43 +73,66 @@
                 "",
                 ""
             ]
-        },
-        "on-click": "bluetoothctl connect FC:58:FA:42:3D:D8"
+        }
     },
     "bluetooth": {
-        "format": " {status}"
+        "format": "<span size='large' color='#82e6ff'></span>  {status}",
+        "format-disabled": "disabled",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
+    "backlight": {
+        "format": "<span size='large' color='#E49186'>{icon}</span>  {percent}%",
+        "reverse-scrolling": true,
+        "format-icons": [
+            "󱩎",
+            "󱩏",
+            "󱩐",
+            "󱩑",
+            "󱩒",
+            "󱩓",
+            "󱩔",
+            "󱩕",
+            "󱩖",
+            "󰛨"
+        ],
+        "tooltip": false
     },
     "battery": {
-        "interval": 60,
+        "format": "<span size='large' color='#B4A1DB'>{icon}</span>  {capacity}%",
+        "format-icons": [
+            "󰁺",
+            "󰁼",
+            "󰁾",
+            "󰂀",
+            "󰁹"
+        ],
         "states": {
             "warning": 25,
             "critical": 15
         },
-        "max-length": 20,
-        "format": "{icon} {capacity}%",
-        "format-warning": " {capacity}%",
-        "format-critical": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": "  {capacity}%",
-        "format-alt": "{icon} {time}",
-        "format-full": "  {capacity}%",
-        "format-icons": [
-            " ",
-            " ",
-            " ",
-            " ",
-            " "
-        ]
+        "format-critical": "<span size='large' color='#F07178'>󱉝</span>  {capacity}%",
+        "format-warning": "<span size='large' color='#FFCB6B'>󰂃</span>  {capacity}%",
+        "format-charging": "<span size='large' color='#C3E88D'>󰂄</span>  {capacity}%",
+        "format-alt": "<span size='large' color='#B4A1DB'>󰟩</span>  {power} watts"
     },
+    
     "network": {
-        "format-wifi": "直 {signalStrength}%",
-        "format-ethernet": " wired",
-        "format-disconnected": "睊",
-        "tooltip-format": "SSID: {essid}\nIP: {ipaddr}"
+        "format": "<span size='large' color='#71D58D'>󰖪</span>  no network",
+        "format-ethernet":"<span size='large' color='#6AC1C7'>{icon}</span>  ethernet",
+        "format-wifi":"<span size='large' color='#6AC1C7'>{icon}</span>  {essid} ({signalStrength}%)",
+        "format-disconnected": "<span size='large' color='#6AC1C7'>{icon}</span>  disconnected",
+        "format-icons": {
+            "ethernet": "󰈀",
+            "wifi": "󰖩",
+            "disconnected": "󰤯"
+        },
+        "tooltip-format": "{ipaddr}"
     },
     "clock": {
-        "format": "<span color='#eba0ac'> </span>{:%I:%M %p}",
-        "format-alt": "<span color='#eba0ac'> </span>{:%a %b %d}",
-        "tooltip-format": "{calendar}"
+        "format": "<span size='large' color='#82AAFF'>󰥔</span>  {:%H:%M}",
+        "format-alt": "<span size='large' color='#82AAFF'>󰃭</span>  {:%A, %B %d %Y}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
     }
 }

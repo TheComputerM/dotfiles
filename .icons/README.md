@@ -1,5 +1,5 @@
-- Get the [Fluent Icons](https://www.pling.com/p/1477945/) icon pack.
-- The icon pack by default is *Fluent-purple*
+- Get the [Colloid Icons](https://github.com/vinceliuice/Colloid-icon-theme) icon pack.
+- The icon pack by default is *Colloid-grey*
 - Extract the zip and copy the contents to `~/.icons`.
 - Apply the gsettings using the script `~/.config/hypr/scripts/import-gsettings.sh`.
 - If you choose to install a different icon pack you just need to change `~/.config/gtk-3.0/settings.ini`.

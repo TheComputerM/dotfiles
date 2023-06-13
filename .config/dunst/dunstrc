@@ -1,11 +1,11 @@
 [global]
-frame_color = "#89B4FA"
+frame_color = "#82AAFF"
 separator_color= frame
 origin = top-right
 offset = 12x8
 
 [urgency_low]
-background = "#1E1E2E"
+background = "#1E1E1E"
 foreground = "#CDD6F4"
 
 [urgency_normal]
