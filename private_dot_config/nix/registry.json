@@ -11,6 +11,22 @@
         "repo": "nixpkgs",
         "type": "github"
       }
+    },
+    {
+      "from": {
+        "owner": "NixOS",
+        "ref": "nixos-25.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      },
+      "to": {
+        "__final": true,
+        "lastModified": 1771043024,
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "3aadb7ca9eac2891d52a9dec199d9580a6e2bf44",
+        "type": "github"
+      }
     }
   ],
   "version": 2
