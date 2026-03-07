@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "skills": {
+    "skill-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/skill-creator/SKILL.md",
+      "skillFolderHash": "7bd8fc459f09f0e14dcc2adbb4a5a58e60ea755c",
+      "installedAt": "2026-01-29T14:53:03.585Z",
+      "updatedAt": "2026-01-29T14:53:03.585Z"
+    },
+    "git-commit": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/awesome-copilot.git",
+      "skillPath": "skills/git-commit/SKILL.md",
+      "skillFolderHash": "883a6a7466f55a9cd9f22cf1cce2d9333fc9b998",
+      "installedAt": "2026-03-06T13:56:51.821Z",
+      "updatedAt": "2026-03-06T13:56:51.821Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode",
+    "claude-code"
+  ]
+}
