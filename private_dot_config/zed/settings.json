@@ -7,6 +7,21 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "provider": "zed"
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "ssh_connections": [
     {
       "host": "github.com",
@@ -33,6 +48,28 @@
   "languages": {
     "Nix": {
       "language_servers": ["nixd", "!nil"],
+    },
+  },
+  "agent_servers": {
+    "opencode": {
+      "type": "registry"
+    },
+    "claude-acp": {
+      "type": "registry"
+    },
+  },
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "enable_thinking": false
+    },
+    "sidebar_side": "right",
+    "dock": "right",
+    "commit_message_model": {
+      "provider": "openai",
+      "model": "gpt-5.4-nano",
     },
   },
 }

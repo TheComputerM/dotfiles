@@ -6,9 +6,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/anthropics/skills.git",
       "skillPath": "skills/skill-creator/SKILL.md",
-      "skillFolderHash": "7bd8fc459f09f0e14dcc2adbb4a5a58e60ea755c",
+      "skillFolderHash": "3cf9a8db32597ba3e24b584a3d696f4e11c7d7b6",
+      "pluginName": "example-skills",
       "installedAt": "2026-01-29T14:53:03.585Z",
-      "updatedAt": "2026-01-29T14:53:03.585Z"
+      "updatedAt": "2026-04-29T10:45:19.329Z"
     },
     "git-commit": {
       "source": "github/awesome-copilot",
@@ -18,6 +19,15 @@
       "skillFolderHash": "883a6a7466f55a9cd9f22cf1cce2d9333fc9b998",
       "installedAt": "2026-03-06T13:56:51.821Z",
       "updatedAt": "2026-03-06T13:56:51.821Z"
+    },
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "skillFolderHash": "121eecacd86c0aab06aef5cd4663e80c5397cd41",
+      "installedAt": "2026-04-27T07:27:26.761Z",
+      "updatedAt": "2026-04-27T07:27:26.761Z"
     }
   },
   "dismissed": {
@@ -25,13 +35,17 @@
   },
   "lastSelectedAgents": [
     "amp",
+    "antigravity",
     "cline",
     "codex",
     "cursor",
+    "deepagents",
+    "dexto",
+    "firebender",
     "gemini-cli",
     "github-copilot",
     "kimi-cli",
     "opencode",
-    "claude-code"
+    "warp"
   ]
 }
